@@ -3339,7 +3339,7 @@ angular.module('myApp.services')
           var changedDialogs = {}
           var newPinned = {}
           if (!update.order) {
-            MtpApiManager.invokeApi('messages.getPinnedDialogs', {}).then(function (dialogsResult) {
+            MtpApiManager.invokeApi('messages.getPinnedDialogs', { folder_id: 0 }).then(function (dialogsResult) {
               dialogsResult.dialogs.reverse()
               applyConversations(dialogsResult)
               angular.forEach(dialogsResult.dialogs, function (dialog) {
