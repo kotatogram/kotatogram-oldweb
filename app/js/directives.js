@@ -815,6 +815,7 @@ angular.module('myApp.directives', ['myApp.filters'])
   .directive('myMessageAdminBadge', function (_, AppPeersManager, AppMessagesManager, AppProfileManager) {
 
     var adminBadgeText = _('message_admin_badge_raw')
+    var adminRank = "";
 
     return {
       scope: {},
@@ -837,11 +838,16 @@ angular.module('myApp.directives', ['myApp.filters'])
         for (var i = 0, len = participants.length; i < len; i++) {
           if (participants[i].user_id == fromID) {
             isAdmin = true
+            if (participants[i].rank) {
+              adminRank = participants[i].rank;
+            } else {
+              adminRank = adminBadgeText;
+            }
             break
           }
         }
         if (isAdmin) {
-          element.text(adminBadgeText).show()
+          element.text(adminRank).show()
         } else {
           element.hide()
         }
