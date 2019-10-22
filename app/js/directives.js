@@ -3446,6 +3446,7 @@ angular.module('myApp.directives', ['myApp.filters'])
       element.addClass('peer_photo_init')
 
       var peerID, peer
+      var inPeer
       var peerPhoto
       var imgEl = $('<img class="' + (attrs.imgClass || '') + '">')
       var initEl = $('<span class="peer_initials nocopy ' + (attrs.imgClass || '') + '"></span>')
@@ -3459,6 +3460,7 @@ angular.module('myApp.directives', ['myApp.filters'])
         }
         peerID = newPeerID
         peer = AppPeersManager.getPeer(peerID)
+        inPeer = AppPeersManager.getInputPeerByID(peerID)
 
         var newClass = 'user_bgcolor_' + (peer.num || 1)
         if (newClass != prevClass) {
@@ -3476,6 +3478,7 @@ angular.module('myApp.directives', ['myApp.filters'])
 
       var updatePeerPhoto = function () {
         var curJump = ++jump
+        var peerPhotoDc
 
         peerPhoto = peer.photo && angular.copy(peer.photo.photo_small)
 
@@ -3488,6 +3491,7 @@ angular.module('myApp.directives', ['myApp.filters'])
         var hasPhoto = peerPhoto !== undefined
 
         if (hasPhoto) {
+          peerPhotoDc = peer.photo.dc_id
           var cachedBlob = MtpApiFileManager.getCachedFile(peer.photo.photo_small)
           if (cachedBlob) {
             initEl.remove()
@@ -3500,7 +3504,7 @@ angular.module('myApp.directives', ['myApp.filters'])
         imgEl.remove()
 
         if (hasPhoto) {
-          MtpApiFileManager.downloadSmallFile(peer.photo.photo_small).then(function (blob) {
+          MtpApiFileManager.downloadSmallFile(peer.photo.photo_small, inPeer, peerPhotoDc).then(function (blob) {
             if (curJump != jump) {
               return
             }

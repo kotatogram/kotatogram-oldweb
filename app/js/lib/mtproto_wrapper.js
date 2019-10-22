@@ -427,7 +427,7 @@ angular.module('izhukov.mtproto.wrapper', ['izhukov.utils', 'izhukov.mtproto'])
       return cachedSavePromises[fileName]
     }
 
-    function downloadSmallFile (location) {
+    function downloadSmallFile (location, peer, dc) {
       if (!FileManager.isAvailable()) {
         return $q.reject({type: 'BROWSER_BLOB_NOT_SUPPORTED'})
       }
@@ -448,6 +448,8 @@ angular.module('izhukov.mtproto.wrapper', ['izhukov.utils', 'izhukov.mtproto'])
           var inputLocation = location
           if (!inputLocation._ || inputLocation._ == 'fileLocation') {
             inputLocation = angular.extend({}, location, {_: 'inputFileLocation'})
+          } else if (inputLocation._ == 'fileLocationToBeDeprecated' && peer && dc) {
+            inputLocation = angular.extend({}, location, {_: 'inputPeerPhotoFileLocation', peer: peer, big: false})
           }
           // console.log('next small promise')
           return MtpApiManager.invokeApi('upload.getFile', {
