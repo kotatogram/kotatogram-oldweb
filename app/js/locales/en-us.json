@@ -188,10 +188,10 @@
 	"relative_time_pluralize_hours_ago": "{'one': '1 hour ago', 'other': '{} hours ago'}",
 	"relative_time_just_now": "just now",
 
-	"changelog_modal_header_recent_updates_md": "Recent updates in **Telegram Web**",
-	"changelog_modal_header_new_updates_md": "**Telegram Web** has been updated!",
+	"changelog_modal_header_recent_updates_md": "Recent updates in **Kotatogram Web**",
+	"changelog_modal_header_new_updates_md": "**Kotatogram Web** has been updated!",
 	"changelog_modal_title_current_version": "current version",
-	"changelog_modal_full_description_md": "Official free messaging app based on Telegram API for speed and security.\n\nThis software is licensed under GNU GPL version 3.",
+	"changelog_modal_full_description_md": "Unofficial free messaging app based on old Telegram Web.\n\nThis software is licensed under GNU GPL version 3.",
 	"changelog_modal_changelog_link": "Changelog",
 	"changelog_app_version": "Version {version}",
 
@@ -233,7 +233,7 @@
 	"clipboard_press_cmd_c": "Press ⌘+C to copy",
 
 	"confirm_modal_logout": "Are you sure you want to log out?",
-	"confirm_modal_update_reload": "A new version of Telegram Web has been downloaded. Launch it?",
+	"confirm_modal_update_reload": "A new version of Kotatogram Web has been downloaded. Launch it?",
 	"confirm_modal_history_flush": "Are you sure? This can not be undone!",
 	"confirm_modal_history_leave_flush_md": "Are you sure, you want to delete all message history and leave the group?\n\nThis action cannot be undone.",
 	"confirm_modal_leave_channel_md": "Are you sure, you want to leave this channel?\n\nThis action cannot be undone.",
@@ -261,7 +261,7 @@
 	"confirm_modal_invite_peer": "Invite to {peer}?",
 	"confirm_modal_share_game": "Share the game to {peer}?",
 	"confirm_modal_apply_lang_with_reload_md": "Reload the App to apply language?",
-	"confirm_modal_migrate_to_https_md": "Telegram Web now supports additional SSL encryption. Would you like to switch to HTTPS?\nThe HTTP version will be disabled soon.",
+	"confirm_modal_migrate_to_https_md": "Kotatogram Web now supports additional SSL encryption. Would you like to switch to HTTPS?\nThe HTTP version will be disabled soon.",
 	"confirm_modal_resize_desktop_md": "Would you like to switch to desktop version?",
 	"confirm_modal_resize_mobile_md": "Would you like to switch to mobile version?",
 	"confirm_modal_recovery_email_empty_md": "Warning! Are you sure you don't want to add a password recovery e-mail?\n\nIf you forget your password, you will lose access to your Telegram account",
@@ -435,7 +435,7 @@
 	"error_modal_no_phone_user_description_md": "Sorry, there is no **Telegram** account with the phone number you provided.",
 	"error_modal_no_phone_users_description_md": "Sorry, there are no **Telegram** accounts with the phone numbers you provided.",
 	"error_modal_username_invalid_description": "Sorry, this username is not allowed.",
-	"error_modal_phonebook_required_description": "Telegram needs access to phonebook to import contacts.",
+	"error_modal_phonebook_required_description": "Kotatogram needs access to phonebook to import contacts.",
 	 "error_modal_username_occupied_description": "Sorry, this username is already taken.",
 	 "error_modal_media_not_supported_description": "Your browser cannot play this media file. Try downloading the file and opening it in a standalone player.",
 	 "error_modal_username_not_found_description": "There is no Telegram account with the username you provided.",
@@ -461,7 +461,7 @@
 	"error_modal_2fa_delayed_time_md": "You'll be able to reset your account in: **{time}**",
 
 
-	"head_telegram": "Telegram",
+	"head_telegram": "Kotatogram",
 	"head_new_group": "New group",
 	"head_new_contact": "New contact",
 	"head_contacts": "Contacts",
@@ -508,7 +508,7 @@
 	"im_add_contact": "Add contact",
 	"im_import_phonebook": "Import phonebook",
 	"im_get_started": "Get started",
-	"im_welcome_text": "Welcome to Telegram Web. You can always set your profile photo and change your name in Settings.",
+	"im_welcome_text": "Welcome to Kotatogram Web. You can always set your profile photo and change your name in Settings.",
 	"im_open_settings": "Open settings",
 	"im_select_a_chat": "Please select a chat to start messaging",
 	"im_loading_history": "Loading history",
@@ -591,7 +591,7 @@
 	"login_about_desc1_md": "The Telegram web-client is a free, fast and secure way to enjoy most of **Telegram**'s features right in your **web-browser**.",
 	"login_about_desc2_md": "It is always synced with the **Telegram app** on your mobile device, which makes it a perfect tool for messaging and file sharing.",
 	"login_about_desc3_md": "Our {source-link: source code} is open, so everyone can make a contribution.",
-	"login_about_intro": "Welcome to the official Telegram web-client.",
+	"login_about_intro": "Welcome to the unofficial Kotatogram web-client.",
 	"login_about_learn": "Learn more",
 	"login_password_title": "Password",
 	"login_password_label": "You have enabled Two-Step Verification, so your account is protected with an additional password.",
@@ -629,8 +629,8 @@
 	"message_attach_video_save": "Save file",
 	"message_attach_video_play": "Play video",
 
-	"message_attach_unsupported": "The message is not supported on your version of Telegram Web. Update the app to view: {link}.",
-	"message_attach_notweb": "The message is not supported on Telegram Web yet. Use Telegram mobile apps to view: {link}.",
+	"message_attach_unsupported": "The message is not supported on your version of Kotatogram Web. Update the app to view: {link}.",
+	"message_attach_notweb": "The message is not supported on Kotatogram Web yet. Use Telegram mobile apps to view: {link}.",
 
 	"conversation_select_modal_title": "Select conversation",
 	"conversation_select_modal_chats_contacts": "Chats and contacts",
@@ -645,9 +645,9 @@
 	"phonebook_modal_submit_active": "Importing",
 	"phonebook_modal_submit": "Import contacts",
 
-	"inactive_tab_title": "Telegram: Zzz...",
+	"inactive_tab_title": "Kotatogram: Zzz...",
 	"inactive_title": "Such error, many tabs",
-	"inactive_description_md": "Telegram supports only one active tab with the app.\nPlease reload this page to continue using this tab or close it.",
+	"inactive_description_md": "Kotatogram supports only one active tab with the app.\nPlease reload this page to continue using this tab or close it.",
 	"inactive_reload_btn": "Reload App",
 
 	"push_action_mute1d": "Mute background alerts for 1 day",

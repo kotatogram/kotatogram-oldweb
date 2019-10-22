@@ -1,12 +1,12 @@
 {
-  "name": "Telegram",
-  "description": "Telegram Web App.\nMore info & source code here: https://github.com/zhukov/webogram",
+  "name": "Kotatogram",
+  "description": "Kotatogram Web App.\nMore info & source code here: https://github.com/kotatogram/kotatogram-oldweb",
   "version": "0.0.1",
   "type": "privileged",
   "launch_path": "/index.html",
   "developer": {
-    "name": "Igor Zhukov",
-    "url": "https://github.com/zhukov"
+    "name": "RadRussianRus",
+    "url": "https://github.com/radrussianrus"
   },
   "installs_allowed_from": [
     "*"

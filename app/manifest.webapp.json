@@ -1,7 +1,7 @@
 {
-  "name": "Telegram",
-  "description": "Telegram Web App.\nMore info & source code here: https://github.com/zhukov/webogram",
-  "short_name": "Telegram",
+  "name": "Kotatogram",
+  "description": "Kotatogram Web App.\nMore info & source code here: https://github.com/kotatogram/kotatogram-oldweb",
+  "short_name": "Kotatogram",
   "display": "standalone",
   "theme_color": "#497495",
   "gcm_sender_id": "122867383838",

@@ -59,12 +59,12 @@ Config.I18n = {
   locale: 'en-us',
   supported: [
     'en-us'
-    , 'es-es'
-    , 'de-de'
-    , 'it-it'
-    , 'nl-nl'
-    , 'pt-br'
-    ,"ru-ru"
+    //, 'es-es'
+    //, 'de-de'
+    //, 'it-it'
+    //, 'nl-nl'
+    //, 'pt-br'
+    , "ru-ru"
   ], // To be copied to package.json
   languages: {
     'en-us': 'English',

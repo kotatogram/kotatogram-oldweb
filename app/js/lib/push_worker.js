@@ -10,6 +10,9 @@ switch (location.hostname) {
   case 'zhukov.github.io':
     defaultBaseUrl = 'https://zhukov.github.io/webogram/#/im'
     break
+  case 'kotatogram.github.io':
+    defaultBaseUrl = 'https://kotatogram.github.io/kotatogram-oldweb/#/im'
+    break
   default:
   case 'web.telegram.org':
     defaultBaseUrl = 'https://' + location.hostname + '/#/im'
@@ -57,7 +60,7 @@ self.addEventListener('push', function(event) {
     if (userInvisibleIsSupported() || hasActiveWindows) {
       return closeAllNotifications()
     }
-    return self.registration.showNotification('Telegram', {
+    return self.registration.showNotification('Kotatogram', {
       tag: 'unknown_peer'
     }).then(function () {
       if (hasActiveWindows) {
@@ -112,7 +115,7 @@ self.addEventListener('message', function(event) {
 })
 
 function fireNotification(obj, settings, lang) {
-  var title = obj.title || 'Telegram'
+  var title = obj.title || 'Kotatogram'
   var body = obj.description || ''
   var icon = 'img/logo_share.png'
   var peerID
@@ -130,7 +133,7 @@ function fireNotification(obj, settings, lang) {
   var tag = 'peer' + peerID
 
   if (settings && settings.nopreview) {
-    title = 'Telegram'
+    title = 'Kotatogram'
     body = lang.push_message_nopreview || 'You have a new message'
     tag = 'unknown_peer'
   }
