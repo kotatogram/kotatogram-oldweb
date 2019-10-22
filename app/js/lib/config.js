@@ -18,10 +18,10 @@ Config = window.Config || {}
 */
 
 Config.App = {
-  id: 2496,
-  hash: '8da85b0d5bfe62527e5b244c209159c3',
-  version: '0.7.0',
-  domains: ['web.telegram.org', 'zhukov.github.io']
+  id: 1003424,
+  hash: '646fe25a32d3940a76aa5b4096b497b3',
+  version: '0.0.1',
+  domains: ['kotatogram.github.io']
 }
 
 Config.Modes = {
@@ -64,7 +64,7 @@ Config.I18n = {
     , 'it-it'
     , 'nl-nl'
     , 'pt-br'
-  // ,"ru-ru"
+    ,"ru-ru"
   ], // To be copied to package.json
   languages: {
     'en-us': 'English',

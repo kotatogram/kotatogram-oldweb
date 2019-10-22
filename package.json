@@ -1,12 +1,12 @@
 {
-  "name": "Telegram",
-  "description": "Telegram Web App.\nMore info & source code here: https://github.com/zhukov/webogram",
-  "version": "0.7.0",
+  "name": "Kotatogram",
+  "description": "Telegram Web App.\nMore info & source code here: https://github.com/kotatogram/kotatogram-oldweb",
+  "version": "0.0.1",
   "main": "app/index.html",
   "single-instance": true,
   "dom_storage_quota": 40,
   "window": {
-    "title": "Telegram",
+    "title": "Kotatogram",
     "icon": "app/img/icons/icon128.png",
     "toolbar": false,
     "frame": true,
@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhukov/webogram.git"
+    "url": "https://github.com/kotatogram/kotatogram-oldweb.git"
   },
-  "author": "zhukov",
+  "author": "kotatogram",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/zhukov/webogram/issues"
+    "url": "https://github.com/kotatogram/kotatogram-oldweb/issues"
   },
   "locales": [
     "en-us",
@@ -42,7 +42,7 @@
     "nl-nl",
     "pt-br"
   ],
-  "homepage": "http://zhukov.github.io/webogram",
+  "homepage": "http://kotatogram.github.io/kotatogram-oldweb",
   "devDependencies": {
     "del": "^4.1.1",
     "gulp": "^4.0.2",
