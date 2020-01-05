@@ -1,5 +1,4 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![Stories in Ready](https://badge.waffle.io/zhukov/webogram.png?label=ready&title=Ready)](https://waffle.io/zhukov/webogram)
 
 ## [Webogram](https://web.telegram.org) — Telegram Web App
 
@@ -64,7 +63,7 @@ Install dependencies with:
 npm install
 ```
 
-Optionaly, run the following commands in the project directory to install gulp globally:
+Optionally, run the following commands in the project directory to install gulp globally:
 
 ```lang=bash
 sudo npm install -g gulp

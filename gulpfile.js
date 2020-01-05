@@ -226,7 +226,6 @@ function writeServiceWorkerFile(rootDir, handleFetch, callback) {
   var config = {
     cacheId: packageJson.name,
     handleFetch: handleFetch,
-    logger: $.util.log,
     staticFileGlobs: fileGlobs,
     stripPrefix: './' + rootDir + '/',
     importScripts: ['js/lib/push_worker.js'],
@@ -243,7 +242,7 @@ function writeServiceWorkerFile(rootDir, handleFetch, callback) {
 
 gulp.task('add-appcache-manifest', gulp.series('build', function () {
   return gulp.src(fileGlobs)
-    .pipe(manifest({
+    .pipe($.manifest3({
       timestamp: false,
       hash: true,
       network: ['http://*', 'https://*', '*'],
@@ -352,10 +351,5 @@ gulp.task('package', gulp.series('cleanup-dist'))
 gulp.task('publish', gulp.series('add-appcache-manifest', function (callback) {
   writeServiceWorkerFile('dist', true, callback)
 }))
-
-gulp.task('deploy', function () {
-  return gulp.src('./dist/**/*')
-    .pipe($.ghPages())
-})
 
 gulp.task('default', gulp.series('build'))
